@@ -2,38 +2,40 @@
 <html>
 
 <head>
-    <title>Mind-Reader</title>
+    <title>Zoltar the Mind-Reader!</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <span class="border border-warning">
-        <div class="text-center">
-            <img id="zoltar" src="zoltar.jpg">
-        </div>
-    </span>
+    <!-- <span class="border border-warning"> -->
+    <div class="text-center">
+        <img id="zoltar" src="zoltar.jpg"> <!--link to local image-->
+    </div>
+    <!-- </span> -->
+
+    <br>
 
     <div class="mx-auto" style="width: 400px;">
+        <div class="container overflow-auto" style="height: 250px;"> <!--creates overflow window for number/symbol output-->
+            <h1 class="text-center" id="header"></h1> <!--creates heading for main flavor text-->
+        </div>
 
-        <h1 class="text-center" id="header"></h1>
-
-        <p class="text-center" id="para"></p>
+        <p class="text-center" id="para"></p> <!--creates smaller element for supplemental text-->
 
         <div class="text-center">
-            <button id="btn-next" class="btn btn-success" onclick="upNext()">Continue</button>
+            <button id="btn-next" class="btn btn-success" onclick="upNext()">Continue</button> <!--creates continue button, styles it to be green, sets it to run "upNext()" on click-->
         </div>
         <br>
         <div class="text-center">
-            <button id="btn-reset" class="btn btn-danger" onclick="startOver()">Start Over</button>
+            <button id="btn-reset" class="btn btn-danger" onclick="startOver()">Start Over</button> <!--creates reset button, styles it, sets it to run "startOver()" function on click-->
         </div>
 
     </div>
 
-
+    <!--bootstrap javascript business-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -43,6 +45,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <!--link to local js-->
     <script src="main.js"></script>
 </body>
 
